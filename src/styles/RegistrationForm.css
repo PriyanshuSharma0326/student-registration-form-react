@@ -4,6 +4,7 @@
     padding: 2rem;
 
     border: 0.25rem solid red;
+    background-color: var(--white);
 }
 
 .form-title {
@@ -21,6 +22,26 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.registration-form > p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2EB086;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: red;
+    width: 72%;
+    margin-left: auto;
 }
 
 .registration-form section {
@@ -88,11 +109,20 @@ span label {
 }
 
 .register, .reset {
-    padding: 0.5rem 0.65rem;
+    padding: 0.55rem 0.65rem;
     width: 42%;
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--white);
+    border-radius: 0.25rem;
+    background: #ff0084;
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);
+    background: linear-gradient(to right, #33001b, #ff0084);
+}
+
+.register:hover, .reset:hover {
+    background: -webkit-linear-gradient(to left, #33001b, #ff0084);
+    background: linear-gradient(to left, #33001b, #ff0084);
 }
 
 .confirmation {
@@ -109,4 +139,9 @@ span label {
 .confirmation h2 {
     font-size: 1rem;
     font-weight: 300;
+}
+
+label span,
+h2 span {
+    color: red;
 }
